@@ -1,0 +1,20 @@
+#container {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    outline: 4px solid black;
+    outline-offset: -1;
+    justify-content: center;
+  }
+  
+  #container>.projectcard {
+    outline: 3px solid green;
+    outline-offset: -1;
+    flex: 1 0 calc(20% - 20px);
+    min-width: 200px;
+    min-height: 250px;
+    text-align: center;
+    margin: 10px;
+  }
+  
