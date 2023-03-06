@@ -9,27 +9,90 @@
 </head>
 <body>
     <h1>The Gallery</h1>
+    <p>This is an overview of the five projects I've undertaken for my Founders and Coders application. Click each button for more information on a given project, or double-click for less.</p> 
     <div id="container">
       <div class="projectcard" id="container.project1">
         <h3>Project 1</h3>
-        <p></p>
+        <button id="button1">More / less information</button>
+        <img>
+        <p class="textbox"></p>
       </div>
       <div class="projectcard" id="container.project2">
         <h3>Project 2</h3>
-        <p></p>
+        <button id="button2">More / less information</button>
+        <img>
+        <p class="textbox"></p>
       </div>
       <div class="projectcard" id="container.project3">
         <h3>Project 3</h3>
-        <p></p>
+        <button id="button3">More / less information</button>
+        <img>
+        <p class="textbox"></p>
       </div>
       <div class="projectcard" id="container.project4">
         <h3>Project 4</h3>
-        <p></p>
+        <button id="button4">More / less information</button>
+        <img>
+        <p class="textbox"></p>
       </div>
       <div class="projectcard" id="container.project5">
         <h3>Project 5</h3>
-        <p></p>
+        <button id="button5">More / less information</button>
+        <img>
+        <p class="textbox"></p>
       </div>
     </div> 
+
+    <!-- JavaScript below this line-->
+<script>
+
+// Declarations //
+const nodeList = document.querySelectorAll("p.textbox");
+let moreinfo1 = "The expanded text for Project One: Hobby Page"
+let moreinfo2 = "For this project I built this webpage - a gallery that puts on show all five of the projects I've carried out for my Founders and Coders application.";
+let moreinfo3 = "The expanded text for Project Three: Movie Data"
+let moreinfo4 = "The expanded text for Project Four: Website"
+let moreinfo5 = "The expanded text for Project Five: Game"
+
+// Functions //
+
+document.getElementById("button1").addEventListener("click", function() {
+  nodeList[0].innerHTML = moreinfo1
+});
+document.getElementById("button1").addEventListener("dblclick", function() {
+  nodeList[0].innerHTML = ""
+});
+
+document.getElementById("button2").addEventListener("click", function() {
+  nodeList[1].innerHTML = moreinfo2
+});
+document.getElementById("button2").addEventListener("dblclick", function() {
+  nodeList[1].innerHTML = ""
+});
+
+document.getElementById("button3").addEventListener("click", function() {
+  nodeList[2].innerHTML = moreinfo3
+});
+document.getElementById("button3").addEventListener("dblclick", function() {
+  nodeList[2].innerHTML = ""
+});
+
+document.getElementById("button4").addEventListener("click", function() {
+  nodeList[3].innerHTML = moreinfo4
+});
+document.getElementById("button4").addEventListener("dblclick", function() {
+  nodeList[3].innerHTML = ""
+});
+
+document.getElementById("button5").addEventListener("click", function() {
+  nodeList[4].innerHTML = moreinfo5
+});
+document.getElementById("button5").addEventListener("dblclick", function() {
+  nodeList[4].innerHTML = ""
+});
+
+</script>
+  <!-- JavaScript above this line -->
+
 </body>
 </html>
