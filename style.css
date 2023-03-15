@@ -1,3 +1,18 @@
+
+h3 {
+  font: 20px Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h5 {
+  font: 14px Helvetica, sans-serif;
+  
+}
+
+p {
+  font: 14px Helvetica, sans-serif;
+}
+
 #container {
     margin: auto;
     display: flex;
@@ -16,5 +31,6 @@
     min-height: 250px;
     text-align: center;
     margin: 10px;
+    padding: 0 8px;
   }
   
